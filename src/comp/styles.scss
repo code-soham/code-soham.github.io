@@ -1,0 +1,32 @@
+.bod{
+    min-height: 90vh;
+}
+.p-4{
+    padding: 4px;
+    padding-left: 14px;
+}
+.appBar{
+    height: 10vh;
+}
+.dark{
+    h3{
+        color: #B76D68;
+    }
+    .appBar{
+        background-color: #1B2432 !important;
+    }    
+    .bod{
+        background-color: #403F4C !important;
+    }
+}
+.light{
+    h3{
+        color: #7A306C;
+    }
+    .appBar{
+        background-color: #96F550 !important;
+    }
+    .bod{
+        background-color: #A9E4EF !important;
+    }
+}
