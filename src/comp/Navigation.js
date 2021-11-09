@@ -1,18 +1,8 @@
 import { AppBar } from "@mui/material";
 import React from "react";
-// import { makeStyles } from "@mui/styles";
-// const useStyles = makeStyles({
-//   root: {
-//     backgroundColor: "#403F4C !important",
-//     minHeight: "90vh",
-//   },
-//   appBar: {
-//     backgroundColor: "#1B2432 !important",
-//     height: "10vh",
-//   },
-// });
+import { Brightness7Rounded, Brightness4Rounded } from "@mui/icons-material";
 export default function Navigation(props) {
-  const [classes, setClasses] = React.useState('dark');
+  const [classes, setClasses] = React.useState("dark");
   const changeTheme = () => {
     if (classes === "light") {
       setClasses("dark");
@@ -20,11 +10,24 @@ export default function Navigation(props) {
       setClasses("light");
     }
   };
-  const [theme, setTheme] = React.useState("dark");
   return (
     <div className={classes}>
       <AppBar className="appBar" position="relative">
-        <h3 className="p-4" onClick={changeTheme}>Header</h3>
+        <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+        >
+          <div></div>
+          <h3 className="pr-14" onClick={changeTheme}>
+            {classes === "dark" ? (
+              <Brightness4Rounded fontSize="large" color="error" />
+            ) : (
+              <Brightness7Rounded color="primary" />
+            )}
+          </h3>
+        </div>
       </AppBar>
       <div className="bod"></div>
     </div>
