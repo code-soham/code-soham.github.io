@@ -5,9 +5,11 @@ import "aos/dist/aos.css";
 import "./comp/styles.scss";
 function App() {
   return (
-    <div id="APP" className="App">
+    <React.Fragment>
+      <div id="APP" className="App" >
       <Navigation />
     </div>
+    </React.Fragment>
   );
 }
 

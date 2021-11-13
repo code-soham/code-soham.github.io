@@ -1,5 +1,5 @@
 .bod{
-    min-height: 90vh;
+    min-height: 190vh;
 }
 .pl-14{
     padding: 4px;
@@ -11,6 +11,15 @@
 }
 .appBar{
     height: 10vh;
+    max-height: 60px;
+}
+.menuIcon{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .menuIcon{
+        display: block;
+    }
 }
 .dark{
     h3{
@@ -20,7 +29,7 @@
         background-color: #1B2432 !important;
     }    
     .bod{
-        background-color: #403F4C !important;
+        background-color: #33323b !important;
     }
 }
 .light{
