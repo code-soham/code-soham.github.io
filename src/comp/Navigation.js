@@ -4,6 +4,9 @@ import {
   Brightness7Rounded,
   Brightness4Rounded,
   Menu,
+  Home,
+  Description,
+  PersonOutline
 } from "@mui/icons-material";
 function ElevationScroll(props) {
   const { children, window } = props;
@@ -39,18 +42,35 @@ export default function Navigation(props) {
                 justifyContent: "space-between",
               }}
             >
-              <div>
-                <h3 className="pl-14 menuIcon" onClick={() => setOpen(!open)}>
+              <div className="pl-14">
+                <div className="icon menuIcon" onClick={() => setOpen(!open)}>
                   <Menu />
-                </h3>
+                </div>
               </div>
-              <h3 className="pr-14" onClick={changeTheme}>
-                {classes === "dark" ? (
-                  <Brightness4Rounded />
-                ) : (
-                  <Brightness7Rounded />
-                )}
-              </h3>
+              <div className="nav">
+              <div className="icon">
+                  <Home />
+                  <h3>Home</h3>
+                </div>
+                <div className="icon">
+                  <PersonOutline/>
+                  <h3>About</h3>
+                </div>
+                <div className="icon">
+                  <Description />
+                  <h3>Resume</h3>
+                </div>
+              </div>
+              <div className="pr-14">
+                
+                <div className="icon logo" onClick={changeTheme}>
+                  {classes === "dark" ? (
+                    <Brightness4Rounded />
+                  ) : (
+                    <Brightness7Rounded />
+                  )}
+                </div>
+              </div>
             </div>
           </AppBar>
         </ElevationScroll>
