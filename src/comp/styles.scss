@@ -1,13 +1,15 @@
-$dark-prm : #b76d68;
-$dark-sec : #1b2432;
-$light-prm : #7a306c;
-$light-sec : #eaeaea;
+$dark-prm: #b76d68;
+$dark-sec: #1b2432;
+$light-prm: #7a306c;
+$light-sec: #eaeaea;
 h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
 .bod {
   min-height: 190vh;
+  // padding-top: 30px;
+  padding: 30px 20px 10px 20px;
 }
 .pl-14 {
   // padding: 4px;
@@ -37,8 +39,9 @@ h3 {
 }
 .nav {
   display: flex;
-  justify-content: center;
-  width: 60vw;
+  justify-content: space-evenly;
+  width: 80vw;
+  max-width: 700px;
   // background-color: #fafafa;
 }
 .nav .icon:after {
@@ -50,7 +53,7 @@ h3 {
   height: 5px;
   border-radius: 30px;
   bottom: 10px;
-  left: 0;;
+  left: 0;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -58,6 +61,58 @@ h3 {
 .nav .icon:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+img {
+  //testing only
+  width: 90%;
+}
+.dropDown {
+  // display: none;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: rgba(27, 36, 50, 0.9);
+  transition: background-color 3s linear;
+}
+
+
+.dark {
+  h3,
+  .icon {
+    color: $dark-prm;
+  }
+  .appBar {
+    background-color: $dark-sec !important;
+  }
+  .bod {
+    background-color: $dark-sec !important;
+  }
+  .nav .icon:after {
+    background-color: $dark-prm !important;
+  }
+}
+.light {
+  h3,
+  .icon {
+    color: $light-prm;
+  }
+  .appBar {
+    background-color: $light-sec !important;
+  }
+  .bod {
+    background-color: $light-sec !important;
+  }
+  .nav .icon:after {
+    background-color: $light-prm !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dropDown {
+    display: none;
+  }
 }
 @media screen and (max-width: 900px) {
   .nav .icon {
@@ -74,34 +129,7 @@ h3 {
   .menuIcon {
     display: flex;
   }
-}
-.dark {
-  h3,
-  .icon {
-    color: $dark-prm;
+  .nav {
+    display: none;
   }
-  .appBar {
-    background-color: $dark-sec !important;
-  }
-  .bod {
-    background-color: $dark-sec !important;
-  }
-  .nav .icon:after{
-    background-color: $dark-prm !important;
-  }
-}
-.light {
-  h3,
-  .icon {
-    color: $light-prm;
-  }
-  .appBar {
-    background-color: $light-sec !important;
-  }
-  .bod {
-    background-color: $light-sec !important;
-  }
-    .nav .icon:after{
-        background-color: $light-prm !important;
-    }
 }
