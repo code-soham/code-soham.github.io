@@ -10,7 +10,7 @@ export default function Dpdown(props) {
     {
       name: "Home",
       path: "/",
-      icon: <Home />,
+      icon: <Home/>,
     },
     {
       name: "About",
@@ -29,7 +29,7 @@ export default function Dpdown(props) {
     },
   ];
   return (
-    <div className="animate__slideInDown dropDown">
+    <div className="dropDown">
       {data.map((item, index) => {
         return (
           <Link key={index} to={item.path} style={{ textDecoration: "none" }}>
@@ -41,8 +41,7 @@ export default function Dpdown(props) {
               // className="icon"
               data-aos="zoom-in-down"
             >
-              {item.icon}
-              <h3>{item.name}</h3>
+              <span className="icon">{item.icon} &nbsp; {item.name}</span>
             </div>
           </Link>
         );

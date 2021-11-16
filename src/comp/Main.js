@@ -4,6 +4,7 @@ import {
   Brightness7Rounded,
   Brightness4Rounded,
   Menu,
+  Close,
 } from "@mui/icons-material";
 import Aos from "aos";
 import { BrowserRouter } from "react-router-dom";
@@ -34,6 +35,9 @@ export default function Main(props) {
       setClasses("light");
     }
   };
+  window.onscroll = function () {
+    setOpen(false);
+  }
   useEffect(() => {
     Aos.init({
       duration: 500,
@@ -53,7 +57,7 @@ export default function Main(props) {
               >
                 <div className="pl-14">
                   <div className="icon menuIcon" onClick={() => setOpen(!open)}>
-                    <Menu />
+                    { !open ? <Menu /> : <Close/>}
                   </div>
                 </div>
                 <NavBar
@@ -84,7 +88,6 @@ export default function Main(props) {
               setCurPath={setCurPath}
             />
           ) : null}
-          {/* <div className="box"/> //testing */}
           <div className="bod">
             <Routing lpath={lpath} />
           </div>

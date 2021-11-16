@@ -1,11 +1,14 @@
+//theme variables
 $dark-prm: #b76d68;
 $dark-sec: #1b2432;
 $light-prm: #7a306c;
 $light-sec: #eaeaea;
+//removing pre-padding of header components
 h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
+//basic shaping
 .bod {
   min-height: 190vh;
   // padding-top: 30px;
@@ -19,10 +22,12 @@ h3 {
   // padding: 4px;
   padding-right: 14px;
 }
+//appbar
 .appBar {
   height: 10vh;
   max-height: 60px;
 }
+//navbar large screens
 .icon {
   height: 10vh;
   max-height: 60px;
@@ -62,26 +67,41 @@ h3 {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+//rough
 img {
   //testing only
   width: 90%;
 }
+
+//dropdown handler
+@keyframes dropdown {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 240px;
+  }
+}
 .dropDown {
-  // display: none;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
+  height: fit-content;
   align-items: center;
-  background-color: rgba(27, 36, 50, 0.9);
-  transition: background-color 3s linear;
+  animation: dropdown 0.4s;
+}
+.ddIcon {
+  height: 40px !important;
 }
 
 
+//theme specific styling
 .dark {
   h3,
-  .icon {
+  .icon,
+  .ddIcon {
     color: $dark-prm;
   }
   .appBar {
@@ -93,10 +113,14 @@ img {
   .nav .icon:after {
     background-color: $dark-prm !important;
   }
+  .dropDown {
+    background-color: rgba(27, 36, 50, 0.9);
+  }
 }
 .light {
   h3,
-  .icon {
+  .icon,
+  .ddIcon {
     color: $light-prm;
   }
   .appBar {
@@ -108,7 +132,13 @@ img {
   .nav .icon:after {
     background-color: $light-prm !important;
   }
+  .dropDown {
+    background-color: rgba(234, 234, 234, 0.9);
+  }
 }
+
+
+//media queries
 @media screen and (min-width: 768px) {
   .dropDown {
     display: none;
