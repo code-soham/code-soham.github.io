@@ -11,6 +11,7 @@ import { BrowserRouter } from "react-router-dom";
 import NavBar from "./NavBar";
 import Routing from "./Routing";
 import Dpdown from "./Dpdown";
+import Footer from "./Footer";
 function ElevationScroll(props) {
   const { children, window } = props;
   const trigger = useScrollTrigger({
@@ -37,7 +38,7 @@ export default function Main(props) {
   };
   window.onscroll = function () {
     setOpen(false);
-  }
+  };
   useEffect(() => {
     Aos.init({
       duration: 500,
@@ -57,7 +58,11 @@ export default function Main(props) {
               >
                 <div className="pl-14">
                   <div className="icon menuIcon" onClick={() => setOpen(!open)}>
-                    { !open ? <Menu /> : <Close/>}
+                    {!open ? (
+                      <Menu data-aos="zoom-in" />
+                    ) : (
+                      <Close data-aos="zoom-in" />
+                    )}
                   </div>
                 </div>
                 <NavBar
@@ -91,6 +96,7 @@ export default function Main(props) {
           <div className="bod">
             <Routing lpath={lpath} />
           </div>
+          <Footer />
         </div>
       </BrowserRouter>
     </React.Fragment>
