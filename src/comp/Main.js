@@ -4,14 +4,14 @@ import {
   Brightness7Rounded,
   Brightness4Rounded,
   Menu,
-  Close,
+  MenuOpen
 } from "@mui/icons-material";
 import Aos from "aos";
 import { BrowserRouter } from "react-router-dom";
 import NavBar from "./NavBar";
 import Routing from "./Routing";
 import Dpdown from "./Dpdown";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 function ElevationScroll(props) {
   const { children, window } = props;
   const trigger = useScrollTrigger({
@@ -61,7 +61,7 @@ export default function Main(props) {
                     {!open ? (
                       <Menu data-aos="zoom-in" />
                     ) : (
-                      <Close data-aos="zoom-in" />
+                      <MenuOpen data-aos="zoom-in" />
                     )}
                   </div>
                 </div>
