@@ -4,7 +4,7 @@ import {
   Brightness7Rounded,
   Brightness4Rounded,
   Menu,
-  MenuOpen
+  MenuOpen,
 } from "@mui/icons-material";
 import Aos from "aos";
 import { BrowserRouter } from "react-router-dom";
@@ -94,7 +94,7 @@ export default function Main(props) {
             />
           ) : null}
           <div className="bod">
-            <Routing lpath={lpath} />
+            <Routing lpath={lpath} cpath={curPath} />
           </div>
           <Footer />
         </div>

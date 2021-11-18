@@ -1,18 +1,14 @@
 import React from "react";
-
+import getDirection from "./Animator";
 export default function About(props) {
-  window.scrollTo(
-    {
-      top: 0,
-      behavior: "smooth",
-    }
-  );
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
   return (
-    <div data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine">
+    <div className={getDirection(props.lastPath, props.curPath)}>
       <h3>{props.lastPath}</h3>
-      <img src="https://picsum.photos/600/600" alt="asf"/>
+      <img src="https://picsum.photos/600/600" alt="asf" />
     </div>
   );
 }

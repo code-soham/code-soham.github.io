@@ -3,6 +3,7 @@ import "./App.css";
 import "aos/dist/aos.css";
 import "./comp/styles.scss";
 import Aos from "aos";
+import 'animate.css';
 import Main from "./comp/Main";
 function App() {
   Aos.init({ duration: 2000 });

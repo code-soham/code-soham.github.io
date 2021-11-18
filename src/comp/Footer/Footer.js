@@ -1,5 +1,6 @@
 import React from "react";
 import Contact from "./ContactMe";
+import Social from "./Social";
 export default function Footer() {
   return (
     <React.Fragment>
@@ -8,6 +9,7 @@ export default function Footer() {
           <Contact />
         </div>
         <div className="foot-r-div">
+        <Social />
         </div>
       </div>
       {/* </div> */}
