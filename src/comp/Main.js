@@ -7,7 +7,7 @@ import {
   MenuOpen,
 } from "@mui/icons-material";
 import Aos from "aos";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter as BrowserRouter } from "react-router-dom";
 import NavBar from "./NavBar";
 import Routing from "./Routing";
 import Dpdown from "./Dpdown";
