@@ -7,7 +7,7 @@ import {
   MenuOpen,
 } from "@mui/icons-material";
 import Aos from "aos";
-import { HashRouter as BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import NavBar from "./NavBar";
 import Routing from "./Routing";
 import Dpdown from "./Dpdown";
@@ -46,7 +46,7 @@ export default function Main(props) {
   }, []);
   return (
     <React.Fragment>
-      <BrowserRouter>
+      <HashRouter>
         <div className={classes}>
           <ElevationScroll {...props}>
             <AppBar className="appBar" position="sticky">
@@ -98,7 +98,7 @@ export default function Main(props) {
           </div>
           <Footer />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </React.Fragment>
   );
 }
