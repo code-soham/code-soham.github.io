@@ -3,3 +3,55 @@ $dark-prm: #b76d68;
 $dark-sec: #1b2432;
 $light-prm: #7a306c;
 $light-sec: #eaeaea;
+//animations
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  // margin-left: 30px;
+  // margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+//stylings
+.respRC {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .lft {
+    flex: 0.5;
+    width: 50vw;
+  }
+  .rht {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .respRC {
+    flex-direction: column;
+    .lft {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .rht {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}
