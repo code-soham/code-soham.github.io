@@ -11,7 +11,7 @@ $light-sec: #eaeaea;
 }
 //theme specific styling
 .dark {
-  h3,
+  h1, h3,
   .icon,
   .ddIcon {
     color: $dark-prm;
@@ -41,7 +41,7 @@ $light-sec: #eaeaea;
   }
 }
 .light {
-  h3,
+  h1, h3,
   .icon,
   .ddIcon {
     color: $light-prm;

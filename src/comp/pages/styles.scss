@@ -31,6 +31,7 @@ $light-sec: #eaeaea;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   .lft {
     flex: 0.5;
@@ -42,7 +43,92 @@ $light-sec: #eaeaea;
     justify-content: center;
   }
 }
-@media screen and (max-width: 768px) {
+@keyframes stretch {
+  0% {
+    letter-spacing: normal;
+  }
+  100% {
+    letter-spacing: 10px;
+  }
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0;
+  }
+  100% {
+    text-shadow: 0 0 10px $light-sec;
+  }
+}
+@keyframes glow_light {
+  0% {
+    text-shadow: 0;
+  }
+  100% {
+    text-shadow: 0 0 10px red;
+  }
+}
+.home_name:hover {
+  animation: stretch 3s forwards;
+}
+.typewritten {
+  width: 100%;
+  text-align: center;
+}
+.waving_hand {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.light {
+  .typewritten span {
+    color: red;
+  }
+  .typewritten h1 {
+    color: black;
+  }
+  .home_name_inn:hover {
+    animation: glow_light 1.5s forwards;
+  }
+}
+.dark {
+  .typewritten span {
+    color: #eaeaea;
+  }
+  .home_name_inn:hover {
+    animation: glow 1.5s forwards;
+  }
+}
+@media screen and (max-width: 600px) {
   .respRC {
     flex-direction: column;
     .lft {
