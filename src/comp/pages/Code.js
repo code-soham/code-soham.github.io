@@ -3,8 +3,11 @@ import getDirection from "./Animator";
 export default function Code(props) {
   return (
     <div className={getDirection(props.lastPath, props.curPath)}>
-      <h3>{props.lastPath}</h3>
-      <img src="https://picsum.photos/600/600" alt="asf" />
+      <img
+        width="500px"
+        src="https://pruvi007-apis.herokuapp.com/CF/code_soham"
+        alt="codeforces"
+      />
     </div>
   );
 }

@@ -21,7 +21,7 @@ export default function Landing(props) {
               <Typewriter
                 words={[
                   "COMPETITIVE CODER",
-                  "MUSICOPHILE \u266c",
+                  "MUSICOPHILE",
                   "WEB DEVELOPER",
                 ]}
                 cursor

@@ -128,7 +128,7 @@ $light-sec: #eaeaea;
     animation: glow 1.5s forwards;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .respRC {
     flex-direction: column;
     .lft {

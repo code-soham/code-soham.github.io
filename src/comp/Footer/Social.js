@@ -48,7 +48,7 @@ export default function Social() {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={index}
-                className="zoomcon"
+                className="flipcon"
               >
                 {icon.icon}
               </a>
