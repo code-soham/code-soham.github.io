@@ -3,7 +3,7 @@ function getDirection(l, c) {
   if (l === c) {
     return "";
   } else {
-    console.log(pages.indexOf(l) - pages.indexOf(c));
+    // console.log(pages.indexOf(l) - pages.indexOf(c));
     return pages.indexOf(l) < pages.indexOf(c)
       ? "animate__animated animate__slideInRight"
       : "animate__animated animate__slideInLeft";
