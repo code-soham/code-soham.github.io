@@ -7,5 +7,9 @@ export default function CF_card() {
       .then((json) => setData(json.result[0]));
   }, []);
   console.log(data);
-  return <div>{data.handle}</div>;
+  return (
+    <div className="card">
+      
+    </div>
+    );
 }

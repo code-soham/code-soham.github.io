@@ -4,7 +4,9 @@ import getDirection from "./Animator";
 export default function Code(props) {
   return (
     <div className={getDirection(props.lastPath, props.curPath)}>
-      <div style={{height:'100px', width:'auto', backgroundColor:'white'}}>{CF_card()}</div>
+      <div style={{ height: "100px", width: "auto", backgroundColor: "white" }}>
+        {CF_card()}
+      </div>
     </div>
   );
 }
