@@ -1,12 +1,71 @@
-.rating-card{
-    padding: 20px;
-    min-height: 100px;
-    max-width: 300px;
-    width: auto;
-    background-color: rgba(255, 255, 255, 0.136);
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    border-radius: 15px;
+//theme variables
+$dark-prm: #b76d68;
+$dark-sec: #1b2432;
+$dark-prm2: #7c99d5;
+$light-prm: #7a306c;
+$light-sec: #eaeaea;
+$light-prm2: #287b21;
+
+.rating_card {
+  min-height: 100px;
+  min-width: 300px;
+  background-color: rgba(255, 255, 255, 0.136);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 25px 0px;
+  margin:20px;
 }
-a{
-    text-decoration: none;
+.rating_card_header {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 25px 0px 0px 0px;
+  overflow: hidden;
+}
+.rating_card_header img{
+  transition: transform 0.3s ease-in-out;
+}
+.rating_card_header img:hover {
+  transform: scale(1.05);
+
+}
+.rating_card_content {
+  padding: 20px;
+  padding-bottom: 5px;
+}
+a {
+  text-decoration: none;
+}
+.rating_btn {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+//themes
+.dark {
+  .prm2 {
+    color: $dark-prm2;
+    font-weight: 700;
+  }
+  .rating_btn {
+    background-color: rgba(240, 255, 255, 0.2);
+  }
+  .rating_btn:hover {
+    background-color: rgba(36, 35, 41, 0.693);
+  }
+}
+.light {
+  .prm2 {
+    color: $light-prm2;
+    font-weight: 700;
+  }
+  .rating_btn {
+    background-color: rgba(95, 95, 95, 0.2);
+  }
+  .rating_btn:hover {
+    background-color: rgba(148, 205, 208, 0.768);
+  }
 }
