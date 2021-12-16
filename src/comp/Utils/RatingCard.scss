@@ -62,10 +62,13 @@ a {
     color: $light-prm2;
     font-weight: 700;
   }
+  .rating_card{
+    background-color: #94b3d1e9;
+  }
   .rating_btn {
     background-color: rgba(95, 95, 95, 0.2);
   }
   .rating_btn:hover {
-    background-color: rgba(148, 205, 208, 0.768);
+    background-color: rgba(26, 133, 138, 0.768);
   }
 }

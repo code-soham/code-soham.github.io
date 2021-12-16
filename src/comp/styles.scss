@@ -13,6 +13,9 @@ $light-prm2: #287b21;
 }
 //theme specific styling
 .dark {
+  .isLightMode{
+    display: none;
+  }
   h1,
   h3,
   .icon,
@@ -46,6 +49,9 @@ $light-prm2: #287b21;
   }
 }
 .light {
+  .isDarkMode{
+    display: none;
+  }
   h1,
   h3,
   .icon,
