@@ -2,7 +2,6 @@ import {
     Home,
   Description,
   PersonOutline,
-  CodeOff,
 } from '@mui/icons-material';
 import {Link} from 'react-router-dom';
 export default function NavBar(props) {
@@ -16,11 +15,6 @@ export default function NavBar(props) {
       name: "About",
       path: "/about",
       icon: <Description />,
-    },
-    {
-      name: "IYKWIM",
-      path: "/code",
-      icon: <CodeOff />,
     },
     {
       name: "Resume",

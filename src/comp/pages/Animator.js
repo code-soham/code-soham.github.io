@@ -1,5 +1,5 @@
 function getDirection(l, c) {
-  const pages = ["/", "/about", "/code", "/resume"];
+  const pages = ["/", "/about", "/resume"];
   if (l === c) {
     return "";
   } else {

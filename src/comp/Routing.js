@@ -18,10 +18,6 @@ export default function Routing(props) {
         element={<About lastPath={props.lpath} curPath={props.cpath} />}
       />
       <Route
-        path="/code"
-        element={<Code lastPath={props.lpath} curPath={props.cpath} />}
-      />
-      <Route
         path="/resume"
         element={<Resume lastPath={props.lpath} curPath={props.cpath} />}
       />
