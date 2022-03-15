@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect} from "react";
 import getDirection from "./Animator";
 export default function Resume(props) {
+  useEffect(() => {
+    props.setOpen(false);
+  }, []);// eslint-disable-line
   return (
     <div className={getDirection(props.lastPath, props.curPath)}>
       <h3>{props.lastPath}</h3>

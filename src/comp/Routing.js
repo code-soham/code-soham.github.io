@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Landing, About, Code, Resume } from "./pages/PageHandler";
+import { Landing, About, Resume } from "./pages/PageHandler";
 export default function Routing(props) {
   return (
     <Routes>
@@ -10,16 +10,29 @@ export default function Routing(props) {
             lastPath={props.lpath}
             curPath={props.cpath}
             theme={props.theme}
+            setOpen={props.setOpen}
           />
         }
       />
       <Route
         path="/about"
-        element={<About lastPath={props.lpath} curPath={props.cpath} />}
+        element={
+          <About
+            lastPath={props.lpath}
+            curPath={props.cpath}
+            setOpen={props.setOpen}
+          />
+        }
       />
       <Route
         path="/resume"
-        element={<Resume lastPath={props.lpath} curPath={props.cpath} />}
+        element={
+          <Resume
+            lastPath={props.lpath}
+            curPath={props.cpath}
+            setOpen={props.setOpen}
+          />
+        }
       />
     </Routes>
   );

@@ -94,7 +94,7 @@ export default function Main(props) {
             />
           ) : null}
           <div className="bod">
-            <Routing lpath={lpath} cpath={curPath} theme={classes} />
+            <Routing lpath={lpath} cpath={curPath} theme={classes} setOpen={setOpen}/>
           </div>
           <Footer />
         </div>

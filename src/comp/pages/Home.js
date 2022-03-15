@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import getDirection from "./Animator";
 import { Typewriter } from "react-simple-typewriter";
 import "./styles.scss";
 import { Typography } from "@mui/material";
 export default function Landing(props) {
+  useEffect(() => {
+    props.setOpen(false);
+  }, []);// eslint-disable-line
   const theme = props.theme === "dark" ? [2] : [1];
   return (
     <div className={getDirection(props.lastPath, props.curPath)}>

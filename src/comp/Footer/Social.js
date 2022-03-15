@@ -11,27 +11,27 @@ export default function Social() {
   const iconsData = [
     {
       icon: <LinkedIn fontSize="large" />,
-      link: "https://www.linkedin.com/",
+      link: "https://www.linkedin.com/in/code-soham",
       name: "LinkedIn",
     },
     {
       icon: <Twitter fontSize="large" />,
-      link: "https://www.twitter.com/",
+      link: "https://www.twitter.com/sohamhasnt",
       name: "Twitter",
     },
     {
       icon: <GitHub fontSize="large" />,
-      link: "https://www.github.com/",
+      link: "https://www.github.com/code-soham",
       name: "GitHub",
     },
     {
       icon: <FacebookTwoTone fontSize="large" />,
-      link: "https://www.facebook.com/",
+      link: "https://www.facebook.com/soham.36.chowdhury",
       name: "Facebook",
     },
     {
       icon: <Instagram fontSize="large" />,
-      link: "https://www.instagram.com/",
+      link: "https://www.instagram.com/soham_hasnt_",
       name: "Instagram",
     },
   ];
