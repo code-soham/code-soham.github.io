@@ -113,6 +113,12 @@ export default function About(props) {
             alt="SparkAR"
           />
           <img
+            height={96}
+            width={96}
+            src={process.env.PUBLIC_URL + `Assets/Icons/office.svg`}
+            alt="Microsoft Office"
+          />
+          <img
             src={process.env.PUBLIC_URL + `Assets/Icons/canva.svg`}
             alt="Canva"
           />

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
 //theme variables
 $dark-prm: #b76d68;
 $dark-sec: #1b2432;
@@ -9,12 +8,23 @@ $light-sec: #eaeaea;
 $light-prm2: #287b21;
 //font
 * {
+  user-select: none;
   font-family: "Lato", sans-serif;
-  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 //theme specific styling
+.loader {
+  background-color: $dark-sec;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+}
 .dark {
-  .isLightMode{
+  .isLightMode {
     display: none;
   }
   h1,
@@ -50,7 +60,7 @@ $light-prm2: #287b21;
   }
 }
 .light {
-  .isDarkMode{
+  .isDarkMode {
     display: none;
   }
   h1,
@@ -282,4 +292,23 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
   }
+}
+
+//scrollbar
+::first-letter {
+  font-size: 1.2em;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: $dark-sec;
+}
+::-webkit-scrollbar-thumb {
+  background: $dark-sec;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $dark-prm2;
 }

@@ -36,6 +36,9 @@ export default function Main(props) {
       setClasses("light");
     }
   };
+  // setTimeout(() => {
+  //   setLoaded(true);
+  // }, 3000);
   window.onscroll = function () {
     setOpen(false);
   };
@@ -76,7 +79,7 @@ export default function Main(props) {
                     data-aos="zoom-in-left"
                     onClick={changeTheme}
                   >
-                    {classes === "dark" ? (
+                    {classes === "light" ? (
                       <Brightness4Rounded />
                     ) : (
                       <Brightness7Rounded />
@@ -94,7 +97,12 @@ export default function Main(props) {
             />
           ) : null}
           <div className="bod">
-            <Routing lpath={lpath} cpath={curPath} theme={classes} setOpen={setOpen}/>
+            <Routing
+              lpath={lpath}
+              cpath={curPath}
+              theme={classes}
+              setOpen={setOpen}
+            />
           </div>
           <Footer />
         </div>

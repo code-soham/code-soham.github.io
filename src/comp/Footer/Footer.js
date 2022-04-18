@@ -16,8 +16,7 @@ export default function Footer() {
       </div>
       <div className="footer2">
         <Typography variant="body2" align="center" lineHeight="1em">
-          Designed and developed by Soham Chowdhury ©2021 <br></br>
-          Licensed under the MIT License
+          Designed and developed by Soham Chowdhury ©2021
         </Typography>
       </div>
       {/* </div> */}
