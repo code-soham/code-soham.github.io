@@ -1,4 +1,3 @@
-import { height } from "@mui/system";
 import React, { useEffect } from "react";
 import getDirection from "./Animator";
 export default function Resume(props) {
@@ -80,6 +79,17 @@ export default function Resume(props) {
             />
           </div>
         </div>
+      </div>
+      <div className="cvdiv">
+        <a
+          target="__blank"
+          rel="noreferrer"
+          id="cv_btn"
+          href="https://drive.google.com/file/d/1DkEwjNvEYlkYluRSAzyvbWUchSWEkFDS/view?usp=sharing"
+          download="SOHAM CHOWDHURY RESUME"
+        >
+          VIEW CV
+        </a>
       </div>
     </div>
   );
