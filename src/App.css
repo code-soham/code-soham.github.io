@@ -9,6 +9,30 @@
   background-color: #fff;
   animation: growLine 0.5s linear;
 }
+.dynamic-scale-50 {
+  width: 50% !important;
+}
+.dynamic-scale-60 {
+  width: 60% !important;
+}
+.dynamic-scale-70 {
+  width: 70% !important;
+}
+.dynamic-scale-80 {
+  width: 80% !important;
+}
+.dynamic-scale-85 {
+  width: 85% !important;
+}
+.dynamic-scale-90 {
+  width: 90% !important;
+}
+.dynamic-scale-95 {
+  width: 95% !important;
+}
+.dynamic-scale-100 {
+  width: 100% !important;
+}
 @keyframes growLine {
   from {
     width: 0;

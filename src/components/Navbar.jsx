@@ -59,7 +59,7 @@ export default function Navbar() {
       </div>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`rounded-full bg-slate-800 text-gray-100 p-4 m-4 lg:hidden md:hidden sm:hidden`}
+        className={`rounded-full bg-slate-800 text-gray-100 p-4 m-4 lg:hidden md:hidden sm:hidden absolute left-0 top-0 z-10`}
       >
         {!isOpen && (
           <svg
@@ -92,14 +92,16 @@ export default function Navbar() {
       </button>
       {
         <div
-          className={`text-gray-300 font-extrabold flex flex-col justify-evenly items-center w-11/12 absolute m-auto left-0 right-0 z-10 sm:hidden rounded-lg`}
+          className={`text-gray-300 ${
+            isOpen ? "visible" : "invisible"
+          } font-extrabold flex flex-col justify-evenly items-center w-11/12 absolute m-auto left-0 right-0 top-0 sm:hidden rounded-lg`}
         >
           {segs.map((seg, index) => (
             <a
               key={index}
               className={`py-5 transition-all duration-700 ease-in-out transform-gpu ${
-                isOpen ? "translate-y-0" : "-translate-y-96"
-              } rounded-3xl bg-opacity-90 bg-white z-50 text-orange-500 hover:bg-slate-600 w-full my-1 hover:text-white text-center`}
+                isOpen ? "translate-y-20" : "-translate-y-96"
+              } rounded-3xl bg-opacity-90 bg-white text-orange-500 hover:bg-slate-600 w-full my-1 hover:text-white text-center`}
               href={`#${seg.toLowerCase()}`}
             >
               {seg}
