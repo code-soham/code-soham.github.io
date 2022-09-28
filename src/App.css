@@ -1,0 +1,32 @@
+.active-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 70%;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+  animation: growLine 0.5s linear;
+}
+@keyframes growLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+* {
+  scroll-behavior: smooth;
+  scroll-snap-type: proximity;
+  font-family: Poppins, sans-serif;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 5px;
+}
