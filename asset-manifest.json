@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1802472.css",
-    "main.js": "/static/js/main.f5af5c48.js",
+    "main.css": "/static/css/main.44ab30d0.css",
+    "main.js": "/static/js/main.0d4f7e9e.js",
     "static/js/787.0a7689f1.chunk.js": "/static/js/787.0a7689f1.chunk.js",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.a1802472.css.map": "/static/css/main.a1802472.css.map",
-    "main.f5af5c48.js.map": "/static/js/main.f5af5c48.js.map",
+    "main.44ab30d0.css.map": "/static/css/main.44ab30d0.css.map",
+    "main.0d4f7e9e.js.map": "/static/js/main.0d4f7e9e.js.map",
     "787.0a7689f1.chunk.js.map": "/static/js/787.0a7689f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1802472.css",
-    "static/js/main.f5af5c48.js"
+    "static/css/main.44ab30d0.css",
+    "static/js/main.0d4f7e9e.js"
   ]
 }
