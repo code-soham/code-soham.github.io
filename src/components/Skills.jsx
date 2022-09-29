@@ -56,6 +56,16 @@ export default function Skills() {
       lev: 90,
     },
     {
+      name: "Tailwind",
+      icon: "/tailwind.svg",
+      lev: 95,
+    },
+    {
+      name: "Material UI",
+      icon: "/mui.png",
+      lev: 90,
+    },
+    {
       name: "Canva",
       icon: "/canva.svg",
       lev: 100,

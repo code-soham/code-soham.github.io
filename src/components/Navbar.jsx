@@ -51,7 +51,7 @@ export default function Navbar() {
           href="#"
           className="hover:text-gray-200 absolute left-0 m-1 md:m-3 lg:m-10"
         >
-          <i className="bx bxs-home text-4xl"></i>
+          <i className="bx bxs-home text-2xl md:text-4xl"></i>
         </a>
         {segs.map((seg, index) => (
           <a
