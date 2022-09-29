@@ -19,7 +19,7 @@ export default function Navbar() {
     });
   }, [width, sections]);
   return (
-    <div className="fixed w-full top-0">
+    <div className="fixed w-full top-0 z-50">
       <div
         style={{
           position: "absolute",
@@ -45,6 +45,14 @@ export default function Navbar() {
       <div
         className={`h-16 p-2 bg-slate-700 bg-opacity-50 text-gray-50 font-extrabold hidden sm:flex justify-evenly items-center w-full`}
       >
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <a
+          key="home"
+          href="#"
+          className="hover:text-gray-200 absolute left-0 m-1 md:m-3 lg:m-10"
+        >
+          <i className="bx bxs-home text-4xl"></i>
+        </a>
         {segs.map((seg, index) => (
           <a
             key={index}
@@ -90,6 +98,13 @@ export default function Navbar() {
           </svg>
         )}
       </button>
+      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+      <a
+        href="#"
+        className={`rounded-full text-gray-100 p-4 lg:hidden md:hidden sm:hidden absolute left-0 m-auto w-fit right-0 z-10`}
+      >
+        <i className="bx bxs-home text-2xl"></i>
+      </a>
       {
         <div
           className={`text-gray-300 ${
