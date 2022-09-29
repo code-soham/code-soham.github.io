@@ -16,6 +16,7 @@ export default function Navbar() {
           .reverse()
           .findIndex((section) => window.scrollY >= section.offsetTop - 1);
       setActive(current - 1);
+      setIsOpen(false);
     });
   }, [width, sections]);
   return (
@@ -118,6 +119,7 @@ export default function Navbar() {
                 isOpen ? "translate-y-20" : "-translate-y-96"
               } rounded-3xl bg-opacity-90 bg-white text-orange-500 hover:bg-slate-600 w-full my-1 hover:text-white text-center`}
               href={`#${seg.toLowerCase()}`}
+              onClick={() => setIsOpen(!isOpen)}
             >
               {seg}
             </a>

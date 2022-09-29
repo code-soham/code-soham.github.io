@@ -19,14 +19,17 @@ export default function About() {
               href="https://jgec.ac.in"
               target="_blank"
               rel="noreferrer"
-              className="text-amber-900"
+              className="bg-yellow-200 bg-opacity-50"
             >
               Jalpaiguri Government Engineering College
             </a>{" "}
             pursuing by B.Tech in <br />{" "}
-            <span className="text-purple-800">Information Technology</span>.
+            <span className="bg-purple-800 bg-opacity-40">
+              Information Technology
+            </span>
+            .
           </p>
-          <p className="text-emerald-800 mt-3 max-w-3xl lg:max-w-3xl">
+          <p className="text-emerald-700 mt-3 max-w-3xl lg:max-w-3xl">
             Cut to chase, I am an avid learner and a self-taught developer (
             powered by the most wonderful peer-group in association with
             StackOverflow &amp; Google).
@@ -45,6 +48,14 @@ export default function About() {
           />
         </div>
       </div>
+      <a
+        href="https://drive.google.com/file/d/1BRRRgqxEyM3iTR-7Nd7oAMQfmChImCoU/view?usp=sharing"
+        target={"_blank"}
+        rel="noreferrer"
+        className="flex justify-center scale-75 sm:scale-100 items-center text-3xl h-16 sm:h-20 w-52 bg-purple-900 bg-opacity-50 hover:bg-opacity-100 transition-all duration-700 hover:tracking-widest text-white mt-4 rounded-lg border-2 border-cyan-700"
+      >
+        RESUME <i className="bx bx-download"></i>
+      </a>
     </div>
   );
 }
