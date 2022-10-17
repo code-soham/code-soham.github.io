@@ -66,6 +66,11 @@ export default function Skills() {
       lev: 90,
     },
     {
+      name: "GCP",
+      icon: "/gcp.svg",
+      lev: 40,
+    },
+    {
       name: "Canva",
       icon: "/canva.svg",
       lev: 100,
@@ -106,7 +111,9 @@ export default function Skills() {
               <div
                 className={`w-0 h-full bg-blue-400 rounded-sm transition-all duration-1000 
                 ${
-                  skill.lev === 50
+                  skill.lev === 40
+                    ? "group-hover:w-p40"
+                    : skill.lev === 50
                     ? "group-hover:w-p50"
                     : skill.lev === 60
                     ? "group-hover:w-p60"
