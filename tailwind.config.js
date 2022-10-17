@@ -10,6 +10,7 @@ module.exports = {
         visibility: "visibility",
       },
       width: {
+        p40: "40%",
         p50: "50%",
         p60: "60%",
         p70: "70%",
