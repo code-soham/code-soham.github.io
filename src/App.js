@@ -10,6 +10,7 @@ import Education from "./components/Edu";
 import Projects from "./components/Projects";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Experience from "./components/Experience";
 function App() {
   Aos.init({
     duration: 1000,
@@ -26,6 +27,9 @@ function App() {
       </div>
       <div className="sub_section" id="education">
         <Education />
+      </div>
+      <div className="sub_section" id="experience">
+        <Experience />
       </div>
       <div className="sub_section" id="skills">
         <Skills />
