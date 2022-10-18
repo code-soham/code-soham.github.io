@@ -1,36 +1,47 @@
 import React from "react";
 import "./App.css";
-import "aos/dist/aos.css";
-import "./comp/styles.scss";
+import Footer from "./components/Footer";
+import Head from "./components/Head";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Skills from "./components/Skills";
+import Navbar from "./components/Navbar";
+import Education from "./components/Edu";
+import Projects from "./components/Projects";
 import Aos from "aos";
-import "animate.css";
-import Main from "./comp/Main";
-import { Bars } from "react-loader-spinner";
+import "aos/dist/aos.css";
+import Experience from "./components/Experience";
 function App() {
-  Aos.init({ duration: 2000 });
-  window.onload = () => {
-    var loader = document.querySelector(".loader");
-    setTimeout(() => {
-      loader.classList.add("fadeOut");
-      loader.style.display = "none";
-    }, 2000);
-  };
-
+  Aos.init({
+    duration: 1000,
+    once: false,
+  });
   return (
-    <React.Fragment>
-      <div id="APP" className="App">
-        <div className="loader">
-          <Bars
-            heigth="100"
-            width="100"
-            color="#b76d68"
-            ariaLabel="loading-indicator"
-          />
-        </div>
-        <Main />
+    <div className="bg-gray-300 h-screen">
+      <Navbar />
+      <div className="sub_section" id="home">
+        <Head />
       </div>
-    </React.Fragment>
+      <div className="sub_section" id="about">
+        <About />
+      </div>
+      <div className="sub_section" id="education">
+        <Education />
+      </div>
+      <div className="sub_section" id="experience">
+        <Experience />
+      </div>
+      <div className="sub_section" id="skills">
+        <Skills />
+      </div>
+      <div className="sub_section" id="projects">
+        <Projects />
+      </div>
+      <div className="sub_section" id="contact">
+        <Contact />
+      </div>
+      <Footer />
+    </div>
   );
 }
-
 export default App;

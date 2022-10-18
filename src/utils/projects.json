@@ -1,0 +1,58 @@
+[
+  {
+    "name": "EDC-JGEC",
+    "desc": "Official Website for the Entrepenuership Development Cell, JGEC",
+    "tech": "NextJS",
+    "img": "https://i.imgur.com/4YIP5wS.png",
+    "git": "https://github.com/code-soham/EDC_JGEC/tree/next-dev",
+    "live": "https://edcjgec.tech/"
+  },
+  {
+    "name": "BondedByBlood",
+    "desc": "Bonded by Blood was created to connect donors across the globe with people in need of organs and blood.",
+    "tech": "HTML & NodeJS/MongoDB",
+    "img": "https://i.imgur.com/3fFxyyt.png",
+    "git": "https://github.com/Sanga-Pal/Bonded-By-Blood",
+    "live": "http://bondedbyblood.vercel.app/"
+  },
+  {
+    "name": "Flipkart Clone",
+    "desc": "Flipkart results page clone made using MERN Stack, with complete functionality in sorting, searching, pagination and filtering.",
+    "tech": "MERN",
+    "img": "https://i.imgur.com/JlssUg8.jpeg",
+    "git": "https://github.com/code-soham/flipkart_mech/",
+    "live": "https://code-soham.github.io/flipkart_mech/"
+  },
+  {
+    "name": "Cook-Book",
+    "desc": "A recipe app to create, store and view recipes from all those contributed by the users in the community.",
+    "tech": "MERN",
+    "img": "https://camo.githubusercontent.com/eb27cdf53b22203149368c5e4a9ca0d28242955d17f43dfa488dddac94990571/68747470733a2f2f692e696d6775722e636f6d2f5957394e775a762e6a7067",
+    "git": "https://github.com/code-soham/CookBook-client",
+    "live": "https://code-soham.github.io/CookBook-client/"
+  },
+  {
+    "name": "Form Builder",
+    "desc": "A form builder app to create and maintain forms, based on google forms with reduced flexibility(for now).",
+    "tech": "MERN",
+    "img": "https://images.ctfassets.net/lzny33ho1g45/4ODoWVyzgicvbcb6J9ZZZ5/89e33c333afa86e9e2864ba42833a5be/app-tips-google-forms-00-hero.png",
+    "git": "https://github.com/code-soham/React-Form-Builder",
+    "live": "https://code-soham.github.io/React-Form-Builder/"
+  },
+  {
+    "name": "Link APP",
+    "desc": "Mimics facebook's graph algorithm for maintaining friend connections and displays them as path of the graph.",
+    "tech": "ReactTS",
+    "img": "https://www.drupal.org/files/project-images/Graph%20API%20logo.png",
+    "git": "https://github.com/code-soham/linkApp",
+    "live": "https://code-soham.github.io/linkApp/"
+  },
+  {
+    "name": "Pictionary",
+    "desc": "An informational project maintained by myself for Open Source events - JWOC and Hacktoberfest '21",
+    "tech": "HTML/CSS/JS",
+    "img": "https://www.mobygames.com/images/covers/l/399799-pictionary-ipad-front-cover.jpg",
+    "git": "https://github.com/gdscjgec/Pictionary",
+    "live": "https://gdscjgec.github.io/Pictionary/"
+  }
+]
