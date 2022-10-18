@@ -4,7 +4,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState(-1);
   const [width, setWidth] = useState(window.innerWidth);
-  const segs = ["ABOUT", "EDUCATION", "SKiLLS", "PROJECTS", "CONTACT"];
+  const segs = [
+    "ABOUT",
+    "EDUCATION",
+    "EXPERIENCE",
+    "SKiLLS",
+    "PROJECTS",
+    "CONTACT",
+  ];
   const sections = document.querySelectorAll(".sub_section");
   useEffect(() => {
     setWidth(window.innerWidth);
