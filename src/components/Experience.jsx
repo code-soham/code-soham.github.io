@@ -12,6 +12,13 @@ export default function Experience() {
         "Used AWS and GCP for implementing features",
       ],
     },
+    {
+      id: 2,
+      title: "Full Stack and DSA Mentor (Part Time)",
+      company: "10x Academy",
+      companyUrl: "https://www.the10xacademy.com/",
+      date: "September 2021 - Present",
+    },
   ];
   return (
     <div className="w-full text-green-900 font-semibold bg-green-100 flex flex-col justify-center items-center sm:p-10 min-h-screen sm:justify-evenly">
@@ -25,7 +32,7 @@ export default function Experience() {
       </h1>
       <div className="w-full flex flex-col justify-center items-center">
         {exp.map((item) => (
-          <div className="w-5/6 max-w-6xl min-w-1 px-6 py-10 border-4 border-green-900 rounded-md shadow-lg bg-opacity-60 min-h-max bg-green-700 flex flex-col justify-evenly">
+          <div className="w-5/6 max-w-6xl my-2 min-w-1 px-6 py-10 border-4 border-green-900 rounded-md shadow-lg bg-opacity-60 min-h-max bg-green-700 flex flex-col justify-evenly">
             <div className="mb-10">
               <h1 className="text-xl md:text-2xl lg:text-4xl font-bold">
                 {item.title}
@@ -41,7 +48,7 @@ export default function Experience() {
               </p>
             </div>
             <ul className="text-sm md:text-base lg:text-xl font-light">
-              {item.notes.map((note) => (
+              {item.notes?.map((note) => (
                 <li>&bull;&nbsp;{note}</li>
               ))}
             </ul>
