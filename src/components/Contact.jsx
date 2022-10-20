@@ -1,46 +1,15 @@
 import { useForm } from "@formspree/react";
+import contacts from "../utils/contacts.json";
 export default function Contact() {
-  const contacts = [
-    {
-      name: "Email",
-      icon: "bx bxl-gmail",
-      link: "mailto:sc2412@it.jgec.ac.in",
-    },
-    {
-      name: "LinkedIn",
-      icon: "bx bxl-linkedin",
-      link: "https://www.linkedin.com/in/code-soham/",
-    },
-    {
-      name: "facebook",
-      icon: "bx bxl-facebook",
-      link: "https://www.facebook.com/soham.36.chowdhury",
-    },
-    {
-      name: "Github",
-      icon: "bx bxl-github",
-      link: "https://github.com/code-soham/",
-    },
-    {
-      name: "Instagram",
-      icon: "bx bxl-instagram",
-      link: "https://www.instagram.com/soham_hasnt_/",
-    },
-    {
-      name: "Twitter",
-      icon: "bx bxl-twitter",
-      link: "https://twitter.com/sohamHasnt",
-    },
-  ];
   return (
     <div className="h-screen w-full text-red-500 bg-neutral-900 flex flex-col justify-center items-center">
       <h1 className="text-3xl sm:text-5xl font-bold mb-14">Connect with me!</h1>
       <div className="mx-auto">{MyForm()}</div>
       <div className="w-5/6 p-3 flex flex-wrap flex-row justify-center items-center">
-        {contacts.map((contact,index) => (
+        {contacts.map((contact, index) => (
           <a
             data-aos="fade-right"
-            data-aos-delay={index*100}
+            data-aos-delay={index * 100}
             className={`m-1 sm:m-3 rounded-full bg-gray-300 h-9 w-9 sm:h-14 sm:w-14 flex justify-center items-center group hover:bg-red-500 transition-all duration-700`}
             href={contact.link}
             target="_blank"

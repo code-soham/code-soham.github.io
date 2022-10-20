@@ -1,29 +1,12 @@
+import ed from "../utils/edu.json";
 export default function Education() {
-  const ed = [
-    {
-      name: "Jalpaiguri Government Engineering College",
-      degree: "B.Tech Information Technology",
-      year: "2020 - ",
-      cgpa: "8.8",
-      url: "https://www.jgec.ac.in/",
-      avatar: "https://i.imgur.com/RTLri1q.png",
-    },
-    {
-      name: "St. Mary's Higher Secondary School",
-      degree: "ISC",
-      year: "2018 - 2020",
-      cgpa: "9.65",
-      url: "https://stmarysschoolcoochbehar.com/",
-      avatar: "https://i.imgur.com/743uStE.png",
-    },
-  ];
   return (
     <div className="min-h-screen w-full text-amber-900 bg-orange-400 flex flex-col justify-evenly lg:justify-center items-center">
       <h1 className=" text-4xl sm:text-5xl font-bold -mb-14 sm:mb-14">
         ? Alma Mater <Book />
         <br />
         <p className="text-sm sm:text-lg  sm:ml-10 font-mono text-white font-medium max-w-xs sm:max-w-md">
-          Cooch-Behar &gt;&gt;&gt; Jalpaiguri 
+          Cooch-Behar &gt;&gt;&gt; Jalpaiguri
         </p>
       </h1>
       <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly w-full items-center">

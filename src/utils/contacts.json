@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Email",
+    "icon": "bx bxl-gmail",
+    "link": "mailto:sc2412@it.jgec.ac.in"
+  },
+  {
+    "name": "LinkedIn",
+    "icon": "bx bxl-linkedin",
+    "link": "https://www.linkedin.com/in/code-soham/"
+  },
+  {
+    "name": "facebook",
+    "icon": "bx bxl-facebook",
+    "link": "https://www.facebook.com/soham.36.chowdhury"
+  },
+  {
+    "name": "Github",
+    "icon": "bx bxl-github",
+    "link": "https://github.com/code-soham/"
+  },
+  {
+    "name": "Instagram",
+    "icon": "bx bxl-instagram",
+    "link": "https://www.instagram.com/soham_hasnt_/"
+  },
+  {
+    "name": "Twitter",
+    "icon": "bx bxl-twitter",
+    "link": "https://twitter.com/sohamHasnt"
+  }
+]
