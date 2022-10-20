@@ -1,25 +1,5 @@
+import exp from "../utils/experience.json";
 export default function Experience() {
-  const exp = [
-    {
-      id: 1,
-      title: "Full Stack Developer (INTERN)",
-      company: "Agrivision4u",
-      companyUrl: "https://www.agrivision4u.com/",
-      date: "August 2022 - October 2022",
-      notes: [
-        "Worked on React frontend",
-        "Worked on NodeJS with Mongo backend",
-        "Used AWS and GCP for implementing features",
-      ],
-    },
-    {
-      id: 2,
-      title: "Full Stack and DSA Mentor (Part Time)",
-      company: "10x Academy",
-      companyUrl: "https://www.the10xacademy.com/",
-      date: "September 2021 - Present",
-    },
-  ];
   return (
     <div className="w-full text-green-900 font-semibold bg-green-100 flex flex-col justify-center items-center sm:p-10 min-h-screen sm:justify-evenly">
       <h1 className="text-2xl sm:text-5xl font-bold">
