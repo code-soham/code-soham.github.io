@@ -3,8 +3,9 @@ export default function About() {
     <div
       className="w-full text-cyan-900 font-semibold bg-white flex flex-col justify-center items-center p-10 min-h-screen sm:justify-evenly"
       style={{
-        background: `url(https://i.imgur.com/x62n0Al.png)`,
-        backgroundPosition: "center",
+        background: `url(https://i.imgur.com/C9b9Q6f.png)`,
+        backgroundRepeat: "repeat",
+        backgroundSize: "cover",
       }}
     >
       <h1 className="text-3xl sm:text-5xl font-bold">Who Am I ?</h1>
@@ -52,7 +53,7 @@ export default function About() {
         href="https://drive.google.com/file/d/1BRRRgqxEyM3iTR-7Nd7oAMQfmChImCoU/view?usp=sharing"
         target={"_blank"}
         rel="noreferrer"
-        className="flex justify-center scale-75 sm:scale-100 items-center text-3xl h-16 sm:h-20 w-52 bg-purple-900 bg-opacity-50 hover:bg-opacity-100 transition-all duration-700 hover:tracking-widest text-white mt-4 rounded-lg border-2 border-cyan-700"
+        className="flex justify-center scale-75 sm:scale-100 items-center text-3xl h-16 sm:h-20 w-52 bg-amber-900 bg-opacity-50 hover:bg-opacity-100 transition-all duration-700 hover:tracking-widest text-white mt-4 rounded-lg border-2 border-cyan-700"
       >
         RESUME <i className="bx bx-download"></i>
       </a>
