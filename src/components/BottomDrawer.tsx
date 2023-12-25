@@ -23,7 +23,7 @@ const menu = [
 ];
 export default function BottomDrawer() {
   return (
-    <div className="fixed bottom-0 h-8 w-full rounded-t-xl bg-base-300">
+    <div className="fixed bottom-0 h-8 w-full sm:hidden rounded-t-xl bg-base-300">
       <div className="flex flex-row justify-evenly items-center h-8">
         {menu.map((item, index) => (
           <a
