@@ -1,9 +1,16 @@
+import MoreProjects from "@/components/moreProjects";
+import Projects from "@/components/projects";
+import Skills from "@/components/skills";
 import Image from "next/image";
-
+import Sidebar from "@/components/sidebar";
 export default function Home() {
   return (
-    <main className="max-w-6xl m-auto min-h-[160svh] pt-20 z-0">
-      WORK UNDER PROGRESS
-    </main>
+    <>
+      <Projects />
+      <div className="flex flex-col md:flex-row justify-between items-center px-4">
+        <Skills />
+        <MoreProjects />
+      </div>
+    </>
   );
 }
