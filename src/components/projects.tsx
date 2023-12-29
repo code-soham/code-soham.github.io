@@ -113,7 +113,7 @@ export default function Projects() {
           .filter((item) => item.showcase === true)
           .map((project, index) => (
             <a
-              href={project.git}
+              href={project.live ?? project.git}
               key={index}
               className="w-5/6 sm:w-48 h-64 flex flex-col bg-white rounded-md"
             >
